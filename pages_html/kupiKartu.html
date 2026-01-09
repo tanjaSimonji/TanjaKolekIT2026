@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Bioskop </title>
+    <meta name="author" content="Tanja Kolek">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <img id="bioskop" src="../images/bioskop.png" width=" 250" height="50" alt="image">
+
+    <div class="datum_grad">
+
+        <!-- <label id="datum" for="Datum"></label> -->
+        <!-- <input type="date" id="datum" value="Izaberi datum:"> -->
+
+        <select id="Izaberi_grad">
+            <option selected> Izaberi grad </option>
+            <option> Novi Sad </option>
+            <option> Beograd </option>
+            <option> Subotica </option>
+        </select>
+
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html"> NASLOVNA</a></li>
+            <li><a href="repertoar.html">REPERTOAR</a></li>
+            <li><a href="ocene_filmova.html">OCENE FILMOVA</a></li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a href="registracija.html">REGISTRACIJA</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <h1> KUPI KARTU: </h1>
+    <hr>
+    <form id="kupiKartu" method="post" onsubmit="potvrdiFormu(event)">
+
+        <p>Cena karte je: 400 din.</p>
+
+        <p>Unesi broj karata:
+        </p>
+        <input id="brojKarata" type="text" name="brojKarata">
+
+        <p> Red: </p>
+        <input type="checkbox" name="red" value="a"> A
+        <input type="checkbox" name="red" value="b"> B
+        <input type="checkbox" name="red" value="c"> C
+        <input type="checkbox" name="red" value="d"> D
+
+        <p> Sedište: </p>
+        <input type="checkbox" name="sediste" value="1"> 1
+        <input type="checkbox" name="sediste" value="2"> 2
+        <input type="checkbox" name="sediste" value="3"> 3
+        <input type="checkbox" name="sediste" value="4"> 4
+        <input type="checkbox" name="sediste" value="5"> 5
+
+        <p id="pogresan_checkbox"></p>
+
+        <p>Unesi email za potvrdu:
+        </p>
+        <input id="email_kupiKartu" type="text" name="email">
+
+        <p id="cenaUkupno"> </p>
+
+        <br>
+
+        <input id="dugme_nastavi" type="submit" value="Nastavi">
+
+    </form>
+    <hr>
+    <script src="../scriptKupuKartu.js"></script>
+    <hr>
+    <footer>
+        © 2025 Tanja Kolek
+    </footer>
+</body>
+
+</html>

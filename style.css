@@ -6,11 +6,11 @@
 
 @keyframes slide-in {
     from {
-        scale: 10% 0;
+        scale: 10%;
     }
 
     to {
-        scale: 100% 1;
+        scale: 100%;
     }
 }
 
@@ -142,7 +142,9 @@ footer {
     background-color: black;
     color: aliceblue;
     border-radius: 5px;
+    padding: 2%;
     font-size: small;
+    text-align: center;
 }
 
 .konklava:hover,
@@ -160,7 +162,8 @@ footer {
     color: rgb(160, 163, 162);
 }
 
-#dugme {
+#dugme,
+#dugme_nastavi {
     background-color: black;
     color: aliceblue;
     border-radius: 5px;
@@ -171,7 +174,8 @@ footer {
     cursor: pointer;
 }
 
-#dugme:hover {
+#dugme:hover,
+#dugme_nastavi:hover {
     color: black;
     background-color: rgb(160, 163, 162);
 }
@@ -235,4 +239,12 @@ textarea {
     background-color: aliceblue;
     border-radius: 5px;
     border-color: aqua;
+}
+
+#pogresan_checkbox {
+    color: red;
+}
+
+#cenaUkupno {
+    color: greenyellow;
 }
