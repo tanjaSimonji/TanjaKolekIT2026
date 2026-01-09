@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+sitemap: https://github.com/tanjaSimonji/TanjaKolekIT2026/sitemap.xml
