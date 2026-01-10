@@ -49,7 +49,6 @@ h1 {
     margin-top: 5px;
 }
 
-select,
 input#datum {
     background-color: rgb(160, 163, 162);
     color: rgb(0, 0, 0);
@@ -172,6 +171,8 @@ footer {
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
+    width: 200px;
+    height: 47px;
 }
 
 #dugme:hover,
@@ -239,6 +240,8 @@ textarea {
     background-color: aliceblue;
     border-radius: 5px;
     border-color: aqua;
+    width: 500px;
+    height: 120px;
 }
 
 #pogresan_checkbox {
@@ -247,4 +250,9 @@ textarea {
 
 #cenaUkupno {
     color: greenyellow;
+}
+
+input {
+    width: 200px;
+    height: 20px;
 }
