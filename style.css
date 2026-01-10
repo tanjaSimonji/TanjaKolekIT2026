@@ -6,11 +6,13 @@
 
 @keyframes slide-in {
     from {
-        scale: 10%;
+        transform: scale(0.1);
+        /* 10% */
     }
 
     to {
-        scale: 100%;
+        transform: scale(1);
+        /* 100% */
     }
 }
 
@@ -34,32 +36,13 @@ h1 {
 
 @keyframes h1 {
     from {
-        scale: -90% 0;
+        transform: scale(0);
     }
 
     to {
-        scale: 100% 1;
+        transform: scale(1);
     }
 }
-
-.datum_grad {
-    float: right;
-    font-weight: bold;
-    font-size: 25px;
-    margin-top: 5px;
-}
-
-input#datum {
-    background-color: rgb(160, 163, 162);
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    border-color: aqua;
-    border-width: 2px;
-    padding: 12px;
-    font-family: 'Courier New', Courier, monospace;
-    cursor: pointer;
-}
-
 
 .navbar a {
     padding: 20px 28px 20px 28px;
@@ -77,7 +60,6 @@ input#datum {
 }
 
 .navbar ul {
-    padding-left: 0%;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #000;
@@ -109,7 +91,6 @@ input#datum {
 
     .navbar ul {
         margin-top: 55px;
-        padding: 0px;
     }
 
     .img_index {
@@ -171,8 +152,6 @@ footer {
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
-    width: 200px;
-    height: 47px;
 }
 
 #dugme:hover,
@@ -209,7 +188,7 @@ tr:nth-child(even) {
     margin-left: 20px;
 }
 
-input#email {
+#email {
     background-color: aliceblue;
     color: black;
     border-radius: 5px;
@@ -240,8 +219,6 @@ textarea {
     background-color: aliceblue;
     border-radius: 5px;
     border-color: aqua;
-    width: 500px;
-    height: 120px;
 }
 
 #pogresan_checkbox {
@@ -250,9 +227,4 @@ textarea {
 
 #cenaUkupno {
     color: greenyellow;
-}
-
-input {
-    width: 200px;
-    height: 20px;
 }
