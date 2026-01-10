@@ -101,6 +101,9 @@ h1 {
 
 .img_index {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 320px;
 }
 
 .img_index img {
